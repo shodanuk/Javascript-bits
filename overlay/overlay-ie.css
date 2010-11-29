@@ -1,0 +1,4 @@
+.overlay {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='trans-grey.png',sizingMethod='scale');;
+}

@@ -1,0 +1,15 @@
+.overlay {
+  background: rgba(0,0,0,.5);
+  height: 0;
+  left: 0;
+  overflow: hidden;
+  position:absolute;
+  width: 0;
+  top: 0;
+  z-index: 10000;
+
+  -moz-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}

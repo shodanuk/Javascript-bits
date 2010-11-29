@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>Overlay demo</title>
+  <link rel="stylesheet" href="overlay.css" type="text/css" media="screen" charset="utf-8" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="overlay-ie.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
+</head>
+<body>
+
+  <div id="wrapper">
+    <h1>Overlay demo</h1>
+
+    <a href="#">Show overlay</a>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu diam elit, a euismod dui.
+      Donec est turpis, elementum iaculis feugiat sit amet, cursus ac sem. Nam ut ultricies erat.
+      Pellentesque euismod scelerisque condimentum. Nam et urna odio, sit amet blandit risus. In
+      hac habitasse platea dictumst. Fusce dui dolor, lobortis feugiat sollicitudin non, lacinia
+      sed leo. Etiam lorem ipsum, gravida a dapibus at, luctus non metus. Sed elementum tincidunt
+      adipiscing. In sollicitudin tortor sed nunc laoreet vestibulum. Sed hendrerit convallis nisl
+      vitae hendrerit. Proin sed orci eget nulla suscipit ultrices eu nec sapien. Donec ipsum tortor,
+      dapibus cursus eleifend a, iaculis in elit. Ut eget tortor ante. Nam iaculis faucibus mi, sit
+      amet pulvinar nunc eleifend at. Cras in metus eget purus venenatis interdum. Sed viverra
+      malesuada sodales. Integer nibh tortor, laoreet non sodales sed, suscipit nec ligula. In feugiat
+      ultricies neque, mollis varius orci porttitor sed.</p>
+
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Donec egestas molestie magna vitae vulputate. Cras commodo pretium turpis, sed dapibus augue
+      porttitor eu. Vivamus vehicula, diam et aliquet sodales, ligula justo elementum arcu, nec viverra
+      sem purus a erat. Praesent a massa et risus volutpat adipiscing. Nulla facilisi. Aliquam eget
+      justo ligula. Aenean rutrum diam nec arcu fringilla et mattis risus mattis. Aenean elementum
+      aliquet justo vel vestibulum. Phasellus placerat, lectus consectetur feugiat elementum, est massa
+      posuere libero, nec porttitor orci sapien non arcu. Nulla facilisi. Suspendisse dictum commodo
+      lobortis. Donec elementum, orci ac lobortis tincidunt, enim orci gravida quam, id vestibulum risus
+      ipsum eget ligula. Vivamus condimentum congue lacus eu suscipit. Mauris varius rhoncus placerat.
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Pellentesque adipiscing massa enim, eget consequat lectus. Proin mattis pulvinar turpis vel rhoncus.
+      Nam nisl purus, rhoncus convallis bibendum sit amet, iaculis at purus.</p>
+  </div>
+
+  <script src="lib/prototypejs_1.7.js" type="text/javascript"></script>
+  <script src="overlay.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).observe("dom:loaded", function(){
+      var o = new Overlay();
+      $$('a').invoke('observe', 'click', function(){
+        o.showOverlay();
+      });
+    });
+  </script>
+</body>
+</html>
